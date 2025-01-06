@@ -1,0 +1,40 @@
+
+<style>
+
+video {
+    position: relative;
+    width: 100%; /* Video ocupa la mitad de la pantalla */
+    height: 100%; /* Mantiene la proporciÃ³n del video */
+    left: unset;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.contenedor-botones {
+    position: absolute; /* Para centrar los botones sobre el video */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrar en el medio */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar horizontalmente */
+    z-index: 2; /* Asegurarse de que los botones estÃ©n por encima del video */
+}
+
+.boton {
+    margin: 10px 0; /* Espacio entre los botones */
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #8A2BE2; /* Color de fondo del botÃ³n */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efecto en la transiciÃ³n */
+}
+
+.boton:hover {
+    background-color: #6A1B9A; /* Color de fondo al pasar el ratÃ³n */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaÃ±o al pasar el ratÃ³n */
+}
+</style>
